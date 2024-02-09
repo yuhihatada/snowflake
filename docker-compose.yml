@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  llama_cpp:
+    build:
+      context: .
+      dockerfile: ./llama_cpp/Dockerfile
+    ports:
+      - 3001:3001
+    volumes:
+      - ./llama_cpp:/llama_cpp
+    command: ["python", "main.py"]

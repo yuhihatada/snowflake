@@ -1,0 +1,5 @@
+# models
+llama_cpp/models/*
+
+# env
+.env
